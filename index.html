@@ -11,33 +11,70 @@
 </head>
 
 <body>
+    <!-- hamburger -->
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+            <li><a class="menu__item" href="#">Team</a></li>
+            <li><a class="menu__item" href="#">Contact</a></li>
+            <li><a class="menu__item" href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <!-- hamburger -->
+
     <main>
         <div>
             <header>
-                <h1>Icyflipppsss</h1>
+                <h1 class="alkatra">Cashflip</h1>
             </header>
             <div id="main1">
                 <nav>
-                    <h2><a href="">Coinflip</a></h2>
-                    <h2><a href="">Jackpot</a></h2>
+                    <div class="titleContainer">
+                        <h2 class="alkatra">Coinflip</h2>
+                        <h2 class="alkatra">Buy Items</h2>
+                    </div>
                 </nav>
-                <button id="btnRandom">Flippa</button>
+                <div id="coinflipGame">
+
+                    <div>
+                        <input id="depositAmount" type="number">
+                        <button id="submitAmount">Submit</button>
+                    </div>
+
+                    <div id="chosenAmount">You are betting:</div>
+                    <div> Choose a color to bet on! </div>
+                    <div>
+                        <img class="chooseColor" id="chooseRed" src="pokerred.png">
+                        <img class="chooseColor" id="chooseBlack" src="pokerblack.png">
+                    </div>
+                    <button id="submitBet">Submit Bet</button>
+                    <div>Result:</div>
+                    <div id="coinflipResult"></div>
+                </div>
             </div>
         </div>
         <div id="main2">
-            <div id="profile_pic"></div>
+            <div class="titleContainer">
+                <h2 id="username" class="alkatra">Nameeeeeeee</h2>
+                <div id="profile_pic"></div>
+            </div>
+            <div id="wallet"></div>
+            <button id="getCash">Click for Cash</button>
         </div>
     </main>
-
-    <p><span id="result"></span></p>
-    <div id="coinflipContainer"></div>
 
 
 
 
     <footer class="footer">
         <div class="Powered-by">
-            Powered By © Webmaker | All Rights Reserved | Made By zeeicer
+            Powered By © Åva Web Service | All Rights Reserved | Made By Melker Wallebom
         </div>
         <div class="footer-links">
             <div class="links">
@@ -58,9 +95,3 @@
 <script src="app.js"></script>
 
 </html>
-
-
-
-
-<!-- flip knapp -->
-<!-- <button id="btnRandom">Flippa</button> -->
