@@ -19,11 +19,9 @@
         </label>
 
         <ul class="menu__box">
-            <li><a class="menu__item" href="#">Home</a></li>
-            <li><a class="menu__item" href="#">About</a></li>
-            <li><a class="menu__item" href="#">Team</a></li>
-            <li><a class="menu__item" href="#">Contact</a></li>
-            <li><a class="menu__item" href="#">Twitter</a></li>
+            <li><a class="menu__item alkatra" href="#">Home</a></li>
+            <li><a class="menu__item alkatra" href="index.html">Gamble</a></li>
+            <li><a class="menu__item alkatra" href="#">Contact</a></li>
         </ul>
     </div>
     <!-- hamburger -->
@@ -41,23 +39,33 @@
                     </div>
                 </nav>
                 <div id="coinflipGame">
-
-                    <div>
-                        <input id="depositAmount" type="number">
-                        <button id="submitAmount">Submit</button>
+                    <div class="innerBox">
+                        <h3 class="titleContainer alkatra"> Input your Amount</h3>
+                        <div class="Container">
+                            <input id="depositAmount" type="number">
+                            <button id="submitAmount" class="button">Submit</button>
+                            <div id="chosenAmount">You are betting:</div>
+                        </div>
                     </div>
-
-                    <div id="chosenAmount">You are betting:</div>
-                    <div> Choose a color to bet on! </div>
-                    <div>
-                        <img class="chooseColor" id="chooseRed" src="pokerred.png">
-                        <img class="chooseColor" id="chooseBlack" src="pokerblack.png">
+                    <div class="innerBox">
+                        <div class="titleContainer alkatra"> Choose a color to bet on! </div>
+                        <div class="Container">
+                            <div>
+                                <img class="chooseColor" id="chooseRed" src="pokerred.png">
+                                <img class="chooseColor" id="chooseBlack" src="pokerblack.png">
+                            </div>
+                            <button id="submitBet" class="button">Submit Bet</button>
+                        </div>
                     </div>
-                    <button id="submitBet">Submit Bet</button>
-                    <div>Result:</div>
-                    <div id="coinflipResult"></div>
+                    <div class="innerBox center resultBox">
+                        <div class="titleContainer">Result:</div>
+                        <div id="coinflipResult"></div>
+                    </div>
                 </div>
+                <div></div>
+
             </div>
+
         </div>
         <div id="main2">
             <div class="titleContainer">

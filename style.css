@@ -83,7 +83,7 @@ main {
     var(--black)
   );
   width: 60vw;
-  height: 100%;
+  height: 200vh;
   border: var(--darkred) 7px solid;
   border-radius: 15px;
 }
@@ -108,7 +108,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 h1 {
@@ -154,16 +154,20 @@ nav {
 #coinflipGame {
   padding: 50px;
   height: 500px;
+  width: 27vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #depositAmount {
   height: 40px;
-  width: 70px;
+  width: 200px;
   font-size: 20px;
 }
 
 .chooseColor {
-  height: 200px;
+  height: 160px;
   border: 5px solid var(--black);
   border-radius: 100px;
   cursor: pointer;
@@ -173,10 +177,6 @@ nav {
   border-color: greenyellow;
 }
 
-#submitBet {
-  height: 30px;
-}
-
 #coinflipResult {
   height: 200px;
   width: 200px;
@@ -184,11 +184,37 @@ nav {
   background-size: cover;
 }
 
+.innerBox {
+  margin: 30px 0 0 0;
+  width: 100%;
+  border: var(--darkred) 7px solid;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.Container {
+  padding: 20px;
+}
+
+.button {
+  background: var(--darkred);
+  padding: 8px 8px 8px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: var(--black);
+  font-size: 20px;
+}
+
+.resultBox {
+  width: 200px;
+}
+
 /* CSS Till Footern */
 
 .footer {
   position: absolute;
-  top: 130%;
+  top: 250%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,16 +325,15 @@ nav {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #eceff1;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  background-color: var(--black);
+  box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
   transition-duration: 0.25s;
 }
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  color: white;
+  font-size: 40px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;

@@ -4,8 +4,8 @@ let cashButton = document.getElementById("getCash")
 let currencyAmount = 0
 wallet.innerText = `Balance: ${currencyAmount}$`
 
-username = prompt("What is your name?")
-document.getElementById("username").innerHTML = username
+// username = prompt("What is your name?")
+// document.getElementById("username").innerHTML = username
 
 
 // Get Cash
