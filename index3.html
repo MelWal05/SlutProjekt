@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c905a6340.js" crossorigin="anonymous"></script>
+    <!-- mapbox css och js-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- hamburger -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item alkatra" href="index1.html">Home</a></li>
+                <li><a class="menu__item alkatra" href="index2.html">Gamble</a></li>
+                <li><a class="menu__item alkatra" href="index3.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- hamburger -->
+        <h1>Cashflip</h1>
+    </header>
+
+    <div id="contactContainer">
+        <form>
+            <div class="inputContainer">
+                <label>Full Name</label>
+                <input type="text" class="inputArea">
+            </div>
+            <div class="inputContainer">
+                <label>Email</label>
+                <input type="email" class="inputArea">
+            </div>
+            <div class="inputContainer">
+                <label>Password</label>
+                <input type="password" class="inputArea">
+            </div>
+            <div class="inputContainer">
+                <label>Re-type Password</label>
+                <input type="password" class="inputArea">
+            </div>
+            <div class="inputContainer">
+                <label>Choose Category</label>
+                <select class="inputArea">
+                    <option>Click me!</option>
+                    <option>Shop</option>
+                    <option>Gambling System</option>
+                    <option>User Interface</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="inputContainer">
+                <label>Inform us</label>
+                <textarea id="message" class="inputArea"></textarea>
+            </div>
+        </form>
+        <div id="map"></div>
+
+    </div>
+    <footer>
+        <div>
+            <div>Contacts: Cashflip@richest.com</div>
+            <div>Visit us at Åva Gymnasium</div>
+        </div>
+        <div id="socialsContainer">
+            <div>You may also find us at </div>
+            <div id="socials">
+                <div>Socials</div>
+                <ul id="links">
+                    <li><a href=""><i class="icons fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="icons fa-brands fa-snapchat"></i></a></li>
+                    <li><a href=""><i class="icons fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app2.js"></script>
+
+</html>

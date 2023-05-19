@@ -34,24 +34,20 @@ document.getElementById("submitBet").onclick = function(){
     
     if (randomNumber == 0) {
       rightColor = "red"
-      coinflipResult.style.backgroundImage = "url(pokerred.png)"
-      setTimeout(resetCoinflip, 5000)      
+      coinflipResult.style.backgroundImage = "url(Images/pokerred.png)"
     }
     else if (randomNumber == 1) {
       rightColor = "black"
-      coinflipResult.style.backgroundImage = "url(pokerblack.png)"
-      setTimeout(resetCoinflip, 5000)
-    }
+      coinflipResult.style.backgroundImage = "url(Images/pokerblack.png)"
 
+    }
     if (chosenColor == rightColor) {
       currencyAmount += betAmount
     }
     else {
       currencyAmount -= betAmount
     }
-
     document.getElementById("wallet").innerHTML = `Balance: ${currencyAmount}$`
-    setTimeout(resetCoinflip, 5000)
   }
 }
 
@@ -74,12 +70,14 @@ document.getElementById("chooseBlack").onclick = function(){
 
 
 
-function resetCoinflip() {
+document.getElementById("resetBtn").onclick = function() {
+  console.log("Reset")
   document.getElementById("chosenAmount").innerText = `You are betting:`
   chosenColor = ""
   rightColor = ""
   betAmount = 0
   document.getElementById("chooseBlack").classList.remove("selected")
   document.getElementById("chooseRed").classList.remove("selected")
-  // coinflipResult.style.backgroundImage = "linear-gradient(to right, greenyellow, red)"
+  document.getElementById("depositAmount").innertext = 0
+  coinflipResult.style.backgroundImage = "none"
 }
